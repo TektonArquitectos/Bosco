@@ -1,0 +1,16 @@
+{
+  "name": "bosco-menu",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Menú digital de Bosco Coffee House con portal de administración",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev/server.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

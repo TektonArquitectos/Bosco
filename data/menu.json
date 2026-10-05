@@ -1,0 +1,1068 @@
+{
+ "version": 2,
+ "updatedAt": "2026-10-05T15:00:00.000Z",
+ "season": "normal",
+ "brand": {
+  "tagline": "coffee, people & good times",
+  "instagram": "boscosocialhub",
+  "address": "Camino Real de la Plata 340, Int. 101, Zona Plateada, Pachuca, Hidalgo",
+  "mapsQuery": "Bosco Coffee House, Camino Real de la Plata 340, Zona Plateada, Pachuca, Hidalgo",
+  "footLine": "Good days start here",
+  "priceNote": "Precios en pesos mexicanos (MXN)."
+ },
+ "hero": {
+  "togo": "img/cup-togo.webp",
+  "croissant": "img/croissant.webp",
+  "cup": "img/cup-perso.webp"
+ },
+ "hours": [
+  {
+   "open": "10:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  },
+  {
+   "open": "8:00",
+   "close": "22:00",
+   "closed": false
+  }
+ ],
+ "featured": {
+  "show": true,
+  "title": "Los consentidos",
+  "cards": [
+   {
+    "id": "card-perso",
+    "style": "plum",
+    "tag": "Nuestro sello",
+    "title": "Tu mascota en tu café",
+    "text": "Imprimimos su imagen en tu bebida.",
+    "price": "+$20",
+    "link": "personaliza",
+    "linkText": "Ver cómo",
+    "img": "img/cup-perso.webp",
+    "imgKind": "cut",
+    "note": ""
+   },
+   {
+    "id": "card-pan",
+    "style": "paper",
+    "tag": "",
+    "title": "Croissants y roles",
+    "text": "Croissant de especialidad, crookie, y roles de canela, Ferrero y chai.",
+    "price": "desde $65",
+    "link": "cat-panaderia",
+    "linkText": "Ver panadería",
+    "img": "img/croissant.webp",
+    "imgKind": "cut",
+    "note": ""
+   },
+   {
+    "id": "card-dulces",
+    "style": "blush",
+    "tag": "",
+    "title": "Postres de especialidad",
+    "text": "Dona Dubai, dona Lotus, tulipes y pastel imposible.",
+    "price": "desde $55",
+    "link": "cat-dulces",
+    "linkText": "Ver postres",
+    "img": "img/plate-drizzle.webp",
+    "imgKind": "cut",
+    "note": "",
+    "spin": true
+   },
+   {
+    "id": "card-muerto",
+    "style": "wine",
+    "tag": "De temporada",
+    "title": "Pan de muerto",
+    "text": "Lotus, Oreo, guayaba y Turín.",
+    "price": "",
+    "link": "",
+    "linkText": "",
+    "img": "img/pan-oreo.webp",
+    "img2": "img/pan-guayaba.webp",
+    "imgKind": "cut",
+    "note": "Pregunta precio y disponibilidad en barra."
+   }
+  ]
+ },
+ "ribbon": [
+  "Coffee, please",
+  "Good days start here",
+  "100% happy coffee",
+  "Pet friendly",
+  "Something sweet for someone sweet"
+ ],
+ "seasonNote": {
+  "show": true,
+  "text": "Pregunta por nuestras bebidas de temporada"
+ },
+ "perso": {
+  "show": true,
+  "title": "Personaliza tu bebida",
+  "lead": "Envía tu imagen y disfruta de tu arte latte con tu ilustración favorita.",
+  "polaroid": "img/ilustracion.webp",
+  "polaroidCaption": "tu imagen",
+  "cup": "img/cup-perso.webp",
+  "price": "+$20",
+  "note": "Costo extra +$20, en productos seleccionados.",
+  "note2": "Pregunta en barra cómo enviar tu imagen."
+ },
+ "vitrina": {
+  "show": true,
+  "caption": "Nuestra vitrina"
+ },
+ "pet": {
+  "show": true,
+  "title": "Pet friendly",
+  "text": "Tu mejor amigo también es bienvenido.",
+  "img": "img/dog.webp"
+ },
+ "visit": {
+  "title": "Visítanos",
+  "gallery": [
+   "img/interior-arch.webp",
+   "img/interior-bar.webp",
+   "img/interior-salon.webp"
+  ]
+ },
+ "categories": [
+  {
+   "id": "calientes",
+   "name": "Bebidas calientes",
+   "chip": "Calientes",
+   "group": "bebidas",
+   "sizes": [
+    "12 oz",
+    "16 oz"
+   ],
+   "kw": "cafe coffee caliente hot",
+   "art": {
+    "preset": "calientes"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "espresso-sencillo-0",
+     "n": "Espresso sencillo",
+     "p": [
+      45,
+      null
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "espresso-doble-1",
+     "n": "Espresso doble",
+     "p": [
+      55,
+      null
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "americano-2",
+     "n": "Americano",
+     "p": [
+      55,
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "cappuccino-3",
+     "n": "Cappuccino",
+     "p": [
+      68,
+      78
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "latte-4",
+     "n": "Latte",
+     "p": [
+      70,
+      82
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "flat-white-5",
+     "n": "Flat white",
+     "p": [
+      75,
+      null
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "caramel-latte-6",
+     "n": "Caramel latte",
+     "p": [
+      78,
+      88
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "mocha-7",
+     "n": "Mocha",
+     "p": [
+      82,
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "mocha-blanco-8",
+     "n": "Mocha blanco",
+     "p": [
+      82,
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "chai-latte-9",
+     "n": "Chai latte",
+     "p": [
+      82,
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "dirty-chai-10",
+     "n": "Dirty chai",
+     "p": [
+      102,
+      114
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "chocolate-caliente-11",
+     "n": "Chocolate caliente",
+     "p": [
+      78,
+      88
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "macchiato-sencillo-12",
+     "n": "Macchiato sencillo",
+     "p": [
+      50,
+      null
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "macchiato-doble-13",
+     "n": "Macchiato doble",
+     "p": [
+      60,
+      null
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "matcha-latte-14",
+     "n": "Matcha latte",
+     "p": [
+      82,
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "taro-latte-15",
+     "n": "Taro latte",
+     "p": [
+      82,
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "frias",
+   "name": "Bebidas frías",
+   "chip": "Frías",
+   "group": "bebidas",
+   "sizes": [
+    "16 oz"
+   ],
+   "kw": "cafe coffee frio fria helado iced",
+   "art": {
+    "preset": "frias"
+   },
+   "extra": {
+    "n": "Agrega foam a tu bebida",
+    "p": 15
+   },
+   "items": [
+    {
+     "id": "iced-americano-0",
+     "n": "Iced americano",
+     "p": [
+      62
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-latte-1",
+     "n": "Iced latte",
+     "p": [
+      82
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-caramel-latte-2",
+     "n": "Iced caramel latte",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-mocha-3",
+     "n": "Iced mocha",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-mocha-blanco-4",
+     "n": "Iced mocha blanco",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-chai-latte-5",
+     "n": "Iced chai latte",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-dirty-chai-6",
+     "n": "Iced dirty chai",
+     "p": [
+      114
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-matcha-latte-7",
+     "n": "Iced matcha latte",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "iced-taro-latte-8",
+     "n": "Iced taro latte",
+     "p": [
+      94
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "cold-brew-9",
+     "n": "Cold brew",
+     "p": [
+      88
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "tisana-fria-10",
+     "n": "Tisana fría",
+     "p": [
+      82
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "soda-italiana-11",
+     "n": "Soda italiana",
+     "p": [
+      85
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "frappes",
+   "name": "Frappés",
+   "chip": "Frappés",
+   "group": "bebidas",
+   "sizes": [
+    "16 oz"
+   ],
+   "kw": "frappe frio helado granita",
+   "art": {
+    "preset": "frappes"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "chocolate-0",
+     "n": "Chocolate",
+     "p": [
+      98
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "chocolate-blanco-1",
+     "n": "Chocolate blanco",
+     "p": [
+      98
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "caramelo-2",
+     "n": "Caramelo",
+     "p": [
+      98
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "cookies-n-cream-3",
+     "n": "Cookies ’n cream",
+     "p": [
+      98
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "taro-4",
+     "n": "Taro",
+     "p": [
+      99
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "matcha-5",
+     "n": "Matcha",
+     "p": [
+      99
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "granita-de-sandia-y-ch-6",
+     "n": "Granita de sandía y chile",
+     "p": [
+      85
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "granita-de-fresa-7",
+     "n": "Granita de fresa",
+     "p": [
+      85
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "granita-de-mango-8",
+     "n": "Granita de mango",
+     "p": [
+      85
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "matcha",
+   "name": "Matcha",
+   "chip": "Matcha",
+   "group": "bebidas",
+   "sizes": [
+    "16 oz"
+   ],
+   "kw": "te verde",
+   "art": {
+    "preset": "matcha"
+   },
+   "extra": {
+    "n": "Agrega foam a tu bebida",
+    "p": 15
+   },
+   "items": [
+    {
+     "id": "matcha-latte-0",
+     "n": "Matcha latte",
+     "p": [
+      105
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "strawberry-matcha-1",
+     "n": "Strawberry matcha",
+     "p": [
+      105
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "mango-matcha-2",
+     "n": "Mango matcha",
+     "p": [
+      105
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "coconut-matcha-3",
+     "n": "Coconut matcha",
+     "p": [
+      105
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "tes",
+   "name": "Tés & tisanas",
+   "chip": "Tés",
+   "group": "bebidas",
+   "sizes": [
+    "16 oz"
+   ],
+   "kw": "te tea infusion tisana",
+   "art": {
+    "preset": "tes"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "te-de-manzanilla-y-mie-0",
+     "n": "Té de manzanilla y miel",
+     "p": [
+      45
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "tisana-fusion-de-moras-1",
+     "n": "Tisana fusión de moras",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "tisana-fruta-de-la-pas-2",
+     "n": "Tisana fruta de la pasión",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "tisana-fresa-kiwi-3",
+     "n": "Tisana fresa-kiwi",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "sodas",
+   "name": "Sodas & aguas",
+   "chip": "Sodas",
+   "group": "bebidas",
+   "sizes": [],
+   "kw": "soda agua refresco bebida",
+   "art": {
+    "preset": "sodas"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "sodas-naturales-felix-0",
+     "n": "Sodas naturales Félix 355 ml",
+     "p": [
+      55
+     ],
+     "d": "Guayaba, frambuesa, manzana chihuahua, maracuyá.",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "refresco-1",
+     "n": "Refresco",
+     "p": [
+      45
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "agua-natural-hethe-350-2",
+     "n": "Agua natural Hethe 350 ml",
+     "p": [
+      40
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "agua-mineral-hethe-350-3",
+     "n": "Agua mineral Hethe 350 ml",
+     "p": [
+      45
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "alimentos",
+   "name": "Alimentos",
+   "chip": "Alimentos",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "comida salado desayuno sandwich",
+   "art": {
+    "preset": "alimentos"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "flatbread-de-cochinita-0",
+     "n": "Flatbread de cochinita pibil",
+     "p": [
+      89
+     ],
+     "d": "Cochinita pibil en flatbread a las finas hierbas.",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "baguette-de-pavo-mezcl-1",
+     "n": "Baguette de pavo + mezcla de quesos",
+     "p": [
+      79
+     ],
+     "d": "Jamón de pavo, mezcla de quesos, lechuga, jitomate, aguacate y salsa macha.",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "sandwich-de-pavo-panel-2",
+     "n": "Sándwich de pavo & panela",
+     "p": [
+      70
+     ],
+     "d": "Jamón de pavo, queso panela, lechuga, jitomate, aguacate y salsa macha.",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "croissant-de-pavo-mix-3",
+     "n": "Croissant de pavo & mix de queso",
+     "p": [
+      89
+     ],
+     "d": "Jamón de pavo, mix de quesos, lechuga, jitomate, aguacate y salsa macha.",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "bosco-oats-4",
+     "n": "Bosco Oats",
+     "p": [
+      80
+     ],
+     "d": "Yogurt, avena, granola, plátano, fresa y miel.",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "panaderia",
+   "name": "Panadería",
+   "chip": "Panadería",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "pan croissant",
+   "art": {
+    "preset": "panaderia"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "croissant-natural-0",
+     "n": "Croissant natural",
+     "p": [
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "croissant-de-especiali-1",
+     "n": "Croissant de especialidad",
+     "p": [
+      80
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "crookie-2",
+     "n": "Crookie",
+     "p": [
+      80
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "chocolatin-3",
+     "n": "Chocolatín",
+     "p": [
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "roles",
+   "name": "Roles",
+   "chip": "Roles",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "rol roll pan",
+   "art": {
+    "preset": "roles"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "canela-0",
+     "n": "Canela",
+     "p": [
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "ferrero-1",
+     "n": "Ferrero",
+     "p": [
+      80
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "chai-2",
+     "n": "Chai",
+     "p": [
+      75
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "dulces",
+   "name": "Especialidad dulces",
+   "chip": "Dulces",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "postre dulce dona tulipe",
+   "art": {
+    "preset": "dulces"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "tulipe-de-chocolate-0",
+     "n": "Tulipe de chocolate",
+     "p": [
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "tulipe-yogurt-y-aranda-1",
+     "n": "Tulipe yogurt y arándano",
+     "p": [
+      65
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "crodot-de-chocolate-2",
+     "n": "Crodot de chocolate",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "dona-lotus-3",
+     "n": "Dona Lotus",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "dona-dubai-4",
+     "n": "Dona Dubai",
+     "p": [
+      55
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "pasteles",
+   "name": "Pasteles & pays",
+   "chip": "Pasteles",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "postre pastel pay pie cake",
+   "art": {
+    "preset": "pasteles"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "pay-de-limon-0",
+     "n": "Pay de limón",
+     "p": [
+      69
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "pastel-3-leches-1",
+     "n": "Pastel 3 leches",
+     "p": [
+      69
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "pastel-triple-chocolat-2",
+     "n": "Pastel triple chocolate",
+     "p": [
+      69
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    },
+    {
+     "id": "pastel-imposible-3",
+     "n": "Pastel imposible",
+     "p": [
+      79
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": "galletas",
+   "name": "Galletas estilo New York",
+   "chip": "Galletas",
+   "group": "alimentos",
+   "sizes": [],
+   "kw": "galleta cookie postre",
+   "art": {
+    "preset": "galletas"
+   },
+   "extra": null,
+   "items": [
+    {
+     "id": "galleta-estilo-new-yor-0",
+     "n": "Galleta estilo New York",
+     "p": [
+      60
+     ],
+     "d": "",
+     "img": "",
+     "hidden": false
+    }
+   ]
+  }
+ ]
+}
