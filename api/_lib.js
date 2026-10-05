@@ -10,9 +10,29 @@ const require = createRequire(import.meta.url);
 
 export const PASSWORD = process.env.ADMIN_PASSWORD || 'bosco2026';
 const LOCAL = process.env.BOSCO_LOCAL_STORE || '';
-export const storage = LOCAL ? 'local' : (process.env.BLOB_READ_WRITE_TOKEN ? 'blob' : 'none');
+
+/* When a Blob store is connected, Vercel adds BLOB_STORE_ID and BLOB_READ_WRITE_TOKEN — but it prefixes
+   both names when the store is not the project's first one or when a prefix was set while creating it
+   (e.g. BOSCO_MENU_BLOB_READ_WRITE_TOKEN). So look for any variable whose name *ends* with the one we
+   want, and hand what we find to the SDK explicitly instead of trusting it to read the bare name. */
+function findEnv(suffix) {
+  if (process.env[suffix]) return [suffix, process.env[suffix]];
+  for (const k of Object.keys(process.env)) {
+    if (k.endsWith(suffix) && process.env[k]) return [k, process.env[k]];
+  }
+  return ['', ''];
+}
+const [TOKEN_VAR, TOKEN] = findEnv('BLOB_READ_WRITE_TOKEN');
+const [STORE_VAR, STORE_ID] = findEnv('BLOB_STORE_ID');
+const creds = {};
+if (TOKEN) creds.token = TOKEN;
+if (STORE_ID) creds.storeId = STORE_ID;
+
+export const storage = LOCAL ? 'local' : ((TOKEN || STORE_ID) ? 'blob' : 'none');
+/* names only, never values: lets /api/status say what Vercel actually provided when something is off */
+export const envReport = { version: 3, tokenVar: TOKEN_VAR, storeVar: STORE_VAR, blobVars: Object.keys(process.env).filter(k => /BLOB/i.test(k)).sort() };
 const DOC_PATH = 'data/menu.json';
-const SECRET = process.env.ADMIN_SECRET || sha256('bosco-admin:' + PASSWORD + ':' + (process.env.BLOB_READ_WRITE_TOKEN || ''));
+const SECRET = process.env.ADMIN_SECRET || sha256('bosco-admin:' + PASSWORD + ':' + (TOKEN || STORE_ID || ''));
 
 function sha256(s) { return crypto.createHash('sha256').update(String(s)).digest('hex'); }
 function hmac(s) { return crypto.createHmac('sha256', SECRET).update(String(s)).digest('hex'); }
@@ -73,7 +93,7 @@ export async function readDoc(fresh = false) {
   }
   if (storage === 'blob') {
     const { get } = await blob();
-    const r = await get(DOC_PATH, { access: 'public', useCache: !fresh, abortSignal: AbortSignal.timeout(8000) });
+    const r = await get(DOC_PATH, { ...creds, access: 'public', useCache: !fresh, abortSignal: AbortSignal.timeout(8000) });
     if (!r || r.statusCode !== 200 || !r.stream) return null;
     const text = await new Response(r.stream).text();
     return JSON.parse(text);
@@ -91,10 +111,10 @@ export async function writeDoc(doc) {
     return;
   }
   const { put } = await blob();
-  await put(DOC_PATH, body, { access: 'public', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/json', cacheControlMaxAge: 60, abortSignal: AbortSignal.timeout(25000) });
+  await put(DOC_PATH, body, { ...creds, access: 'public', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/json', cacheControlMaxAge: 60, abortSignal: AbortSignal.timeout(25000) });
   /* every publication is kept, so an earlier version can always be recovered */
   try {
-    await put('data/history/' + stamp + '.json', body, { access: 'public', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/json', abortSignal: AbortSignal.timeout(25000) });
+    await put('data/history/' + stamp + '.json', body, { ...creds, access: 'public', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/json', abortSignal: AbortSignal.timeout(25000) });
   } catch (e) { console.error('history copy failed', e && e.message); }
 }
 
@@ -107,6 +127,6 @@ export async function putImage(name, buf, type) {
     return '/_uploads/' + file;
   }
   const { put } = await blob();
-  const r = await put('img/' + name, buf, { access: 'public', addRandomSuffix: true, contentType: type, abortSignal: AbortSignal.timeout(40000) });
+  const r = await put('img/' + name, buf, { ...creds, access: 'public', addRandomSuffix: true, contentType: type, abortSignal: AbortSignal.timeout(40000) });
   return r.url;
 }
